@@ -1,0 +1,38 @@
+.nav_wrapper {
+  display: flex;
+  padding: 0.3rem;
+  border-radius: 1.3rem;
+  background-color: #556af1;
+  justify-content: space-around;
+
+  & > span {
+    width: 1px;
+    display: block;
+    margin: 0 0.3rem;
+    background-color: #eef0f2;
+  }
+
+  & > button {
+    background-color: inherit;
+    letter-spacing: 0.03rem;
+    font-size: 1.1rem;
+    color: #eef0f2;
+    cursor: pointer;
+    padding: 1rem;
+    border: none;
+    flex: 1;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      background-color: #4259f0;
+    }
+
+    &:first-of-type {
+      border-radius: 1rem 0 0 1rem;
+    }
+
+    &:last-of-type {
+      border-radius: 0 1rem 1rem 0;
+    }
+  }
+}

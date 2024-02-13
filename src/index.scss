@@ -1,0 +1,39 @@
+html,
+* {
+  background-color: #eef0f2;
+  color: #141414;
+}
+
+.app_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.height_input {
+  width: fit-content;
+  margin: 1rem auto;
+
+  & > input {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    width: 100px;
+    border-radius: 0.5rem 0 0 0.5rem;
+    border: 1px solid #141414;
+
+    &:focus {
+      outline: none;
+      border: 2px solid #4259f0;
+    }
+  }
+
+  & > button {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: #eef0f2;
+    border-radius: 0 0.5rem 0.5rem 0;
+    border: 2px solid #4259f0;
+    background-color: #4259f0;
+  }
+}
